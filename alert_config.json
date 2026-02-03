@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "failure_threshold": 0.7,
+  "email": {
+    "enabled": false,
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "sender": "alerts@example.com",
+    "recipients": ["admin@example.com"],
+    "password": "CHANGE_ME"
+  },
+  "actions": {
+    "log_alert": true,
+    "trigger_retraining": true,
+    "rollback_model": false
+  },
+  "alert_cooldown_minutes": 60
+}

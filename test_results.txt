@@ -1,0 +1,74 @@
+﻿============================================================
+TEST 1: Normal Prediction
+============================================================
+Status Code: 200
+Response:
+{
+  "prediction": 0,
+  "confidence": 1.0,
+  "latency": 0.025928020477294922,
+  "drift_detection": {
+    "error": "Drift calculation failed: Error tokenizing data. C error: Expected 7 fields in line 3, saw 8\n"
+  }
+}
+
+============================================================
+TEST 2: Drift Status Check
+============================================================
+Status Code: 200
+Response:
+{
+  "error": "Failed to calculate drift status: Error tokenizing data. C error: Expected 7 fields in line 3, saw 8\n"
+}
+
+============================================================
+TEST 3: Making 30 Normal Predictions
+============================================================
+python : Traceback 
+(most recent call 
+last):
+At line:1 char:1
++ python 
+test_drift.py 2>&1 
+| Out-File 
+-FilePath 
+test_results.txt 
+-Enco ...
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (Trac   
+ eback (most rec    
+ent call last):    
+:String) [], Re    
+moteException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+  File "D:\ai_pred\t
+est_drift.py", line 
+45, in <module>
+    print("\u2713 
+Made 30 
+predictions")
+  File "C:\Users\ram
+as\Downloads\Lib\enc
+odings\cp1252.py", 
+line 19, in encode
+    return codecs.ch
+armap_encode(input,s
+elf.errors,encoding_
+table)[0]
+           ^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^
+^^^^^^
+UnicodeEncodeError: 
+'charmap' codec 
+can't encode 
+character '\u2713' 
+in position 0: 
+character maps to 
+<undefined>

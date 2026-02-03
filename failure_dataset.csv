@@ -1,0 +1,2 @@
+window_start,window_end,psi_score,avg_confidence,latency,concept_drift_count,error_trend,prediction_count,label
+2026-02-04 00:08:10.846844,2026-02-04 01:08:10.846844,0.194954,0.9602,0.02435,0,0.008038,25,-1

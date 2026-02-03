@@ -1,0 +1,2 @@
+timestamp,failure_probability,psi_score,avg_confidence,latency,concept_drift_count,error_trend
+2026-02-04 00:23:47.445766,0.85,0.35,0.52,0.08,4,0.025
